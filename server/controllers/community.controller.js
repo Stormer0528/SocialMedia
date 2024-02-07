@@ -322,19 +322,6 @@ const reportPost = async (req, res) => {
       post: {$eq: postId},
     });
 
-    if (reportedPost) {
-      if (reportedPost.reportedBy.includes(req.userId)) {
-        return res.status(400).json({
-          message: "You have already reported this post.",
-        });
-      }
-
-      reportedPost.reportedBy.push(req.userId);
-      await reportedPost.save();
-
-      return res.status(200).json(reportedPost);
-    }
-
     const report = {
       post: postId,
       community: communityId,
