@@ -157,29 +157,6 @@ const PublicProfile = () => {
             </p>
           ) : null}
         </div>
-        <div>
-          <p>{bio}</p>
-          <p className="flex items-center gap-2">
-            <AiOutlineFieldTime />
-            Joined on {joinedOn}
-          </p>
-          <p className="flex items-center gap-2">
-            <HiOutlineDocumentText />
-            {totalPosts} posts
-          </p>
-          <p className="flex items-center gap-2">
-            <FiUsers />
-            {totalCommunities === 0
-              ? "Not a member of any communities"
-              : totalCommunities === 1
-              ? "1 community"
-              : `${totalCommunities} communities`}
-          </p>
-          <p className="flex items-center gap-2">
-            <FiUser />
-            {totalFollowing} following
-          </p>
-        </div>
 
         <p className="flex items-center gap-2">
           <HiOutlineDocumentText />

@@ -14,6 +14,14 @@ const EmailVerifiedMessage = () => {
             Your email has been verified and your account has been created
             successfully.
           </p>
+          <p className="text-gray-600">
+            Your email has been verified and your account has been created
+            successfully.
+          </p>
+          <p className="text-gray-600">
+            Your email has been verified and your account has been created
+            successfully.
+          </p>
         </div>
         <button
           onClick={() => navigate("/signin")}
